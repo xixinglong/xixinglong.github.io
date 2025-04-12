@@ -14,7 +14,7 @@ config.json
 .DS_Store
 
 # 忽略 VitePress 的构建输出目录
-docs/.vitepress/dist/
+# 
 
 # 忽略 VitePress 的缓存目录
 docs/.vitepress/cache/
