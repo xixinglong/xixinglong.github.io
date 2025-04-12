@@ -61,7 +61,11 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Git基础教程', link: '/posts/git-basics' },
-            { text: '前端开发常见问题', link: '/posts/frontend-development-tips' }
+            { text: 'Docker常用命令', link: '/posts/docker-commands' },
+            { text: 'Docker镜像加速配置', link: '/posts/docker-mirror-config' },
+            { text: '前端开发常见问题', link: '/posts/frontend-development-tips' },
+            { text: 'Docker部署Node项目', link: '/posts/docker-deploy-node' },
+            { text: 'Docker部署静态文件', link: '/posts/docker-deploy-static' }
           ]
         },
         {
@@ -80,6 +84,10 @@ export default defineConfig({
           ]
         }
       ]
+    },
+    outline: {
+      level: 'deep',
+      label: '目录'
     },
 
     socialLinks: [
