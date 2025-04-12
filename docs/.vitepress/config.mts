@@ -16,6 +16,7 @@ export default defineConfig({
   },
   title: "FE流星的博客",
   description: "A Personal Tech Blog",
+  base: '/xixinglong.github.io/',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
