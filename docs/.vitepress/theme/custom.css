@@ -1,0 +1,86 @@
+:root {
+  --vp-c-brand: #3eaf7c;
+  --vp-c-brand-light: #4abf8a;
+  --vp-c-brand-lighter: #5ccf99;
+  --vp-c-brand-dark: #369f6b;
+  --vp-c-brand-darker: #2d8459;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+  .VPDoc {
+    padding: 1rem;
+  }
+
+  .VPNavBar {
+    padding: 0 1rem;
+  }
+
+  .VPFooter {
+    padding: 1rem;
+  }
+}
+
+/* 文章卡片样式 */
+.post-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 12px 0 var(--vp-c-divider);
+}
+
+/* 标签样式 */
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin: 0.2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-soft);
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background-color: var(--vp-c-brand-light);
+  color: var(--vp-c-white);
+}
+
+/* 暗色主题适配 */
+.dark .post-card {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.dark .tag {
+  background-color: var(--vp-c-bg-mute);
+}
+
+/* 代码块样式优化 */
+.vp-doc div[class*='language-'] {
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* 评论区样式 */
+.comments {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 8px;
+}
+
+/* 搜索框样式优化 */
+.VPLocalSearchBox {
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.VPLocalSearchBox:focus-within {
+  border-color: var(--vp-c-brand);
+}
